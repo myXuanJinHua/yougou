@@ -1,1 +1,73 @@
-/**index.wxss**/
+.content{
+  padding-top:100rpx;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background: #ff2d4a;
+  z-index: 9;
+}
+
+.search-input {
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.search-input icon {
+  margin-right: 10px;
+}
+
+.slide-image{
+  width: 750rpx;
+  height: 340rpx;
+}
+.cate{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+}
+.cate .cate-menu{
+  width: 128rpx;
+  height: 140rpx;
+}
+.floor{
+  padding: 10rpx;
+}
+.floor .floor-title{
+  background: #f5f5f4;
+  padding: 8rpx;
+}
+.floor .floor-title image{
+  width: 730rpx;
+  height: 57rpx;
+}
+.floor .floor-content{
+  display: flex;
+
+  padding:15rpx 5rpx;
+}
+.floor .floor-content .floor-content-left image{
+  width: 232rpx;
+  height:386rpx;
+  margin-right:10rpx;
+}
+.floor .floor-content .floor-content-right{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+.floor .floor-content .floor-content-right image{
+  width: 233rpx;
+  height:188rpx;
+}
