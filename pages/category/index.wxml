@@ -1,2 +1,32 @@
 <!--pages/category/index.wxml-->
-<text>分类</text>
+<view class="category">
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="search-input">
+      <icon type="search" size="16" />搜索
+    </view>
+  </view>
+  <!--主体 -->
+  <view class="main">
+    <!-- 左边栏 -->
+    <view class="main-left">
+      <view class="main-left-item {{current===index?'active':''}}" wx:for="{{cates}}" wx:key="index" data-index="{{index}}" bindtap="handleTap">{{item.cat_name}}</view>
+    </view>
+    <!-- 右边栏 -->
+    <view class="main-rights">
+      <view class="main-right" wx:for="{{cates[current].children}}" wx:key="index">
+        <view class="main-right-title">
+          <text>/</text>
+          {{item.cat_name}}
+          <text>/</text>
+        </view>
+        <view class="main-right-cates">
+          <view class="main-right-cates-item" wx:for="{{item.children}}" wx:key="{{index}}">
+            <image src="{{item.cat_icon}}" mode="aspectFill"></image>
+            <view>{{item.cat_name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
