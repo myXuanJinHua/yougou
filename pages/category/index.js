@@ -19,7 +19,7 @@ Page({
     request({
       url:"/categories"
     }).then(res=>{
-      console.log(res)
+      // console.log(res)
       let {message}=res.data
       this.setData({
         cates:message

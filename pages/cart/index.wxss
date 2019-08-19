@@ -1,1 +1,170 @@
-/* pages/cart/index.wxss */
+page, .main {
+  height: 100%;
+  background: #ededed;
+}
+
+.receiving {
+  padding: 20rpx;
+  background: #fff;
+  font-size: 14px;
+}
+
+.receiving .receivingInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+
+.receiving .receivingInfo .receivingTel {
+  margin-right: 50rpx;
+}
+
+.receiving .receivingInfo .receivingTel::after {
+  position: absolute;
+  top: 35rpx;
+  right: 20rpx;
+  display: block;
+  content: "";
+  width: 14rpx;
+  height: 14rpx;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  transform: rotate(45deg);
+}
+
+.receiving .receivingAdress {
+  margin-bottom: 20rpx;
+}
+
+.border {
+  display: block;
+  width: 100%;
+  height: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.shopList {
+  background: #fff;
+}
+
+.shopTitle {
+  font-size: 13px;
+  color: #666;
+  padding: 30rpx;
+}
+
+.shopTitle>text {
+  padding-left: 20rpx;
+  font-size: 14px;
+  color: #444;
+}
+
+.shopMain {
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.shopMain>icon {
+}
+
+.shopMain .shopMain-right {
+  height: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.shopMain .shopMain-right>image {
+  width: 200rpx;
+  height: 200rpx;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.shopMain-right .shopInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopMain-right .shopInfo .shopInfo-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.shopInfo .shopInfo-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopInfo .shopInfo-bottom .shopInfo-bottom-price {
+  font-size: 18px;
+  color: #ff2d4a;
+}
+
+.shopInfo-bottom .shopInfo-number-right {
+  display: flex;
+}
+
+.shopInfo-bottom .shopInfo-number-right>text {
+  height: 50rpx;
+  font-size: 13px;
+  line-height: 50rpx;
+  margin: 0 35rpx;
+}
+
+.shopInfo-bottom .shopInfo-number-right .shopInfo-bottom-number {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.total {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total .totalLeft icon {
+  padding: 0 25rpx;
+}
+
+.total .totalCenter {
+  padding: 10rpx 0;
+}
+
+.total .totalCenter .top text:last-child {
+  color: #ff2d4a;
+  font-size: 18px;
+}
+
+.total .totalCenter .bottom {
+  font-size: 12px;
+  color: #666;
+}
+
+.total .totalRight {
+  background: #ff2d4a;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  width: 30%;
+}

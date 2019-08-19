@@ -43,9 +43,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "分类",
-					"pathName": "pages/category/index",
+					"id": 0,
+					"name": "pages/goods_details/index",
+					"pathName": "pages/goods_details/index",
+					"query": "",
 					"scene": null
 				}
 			]

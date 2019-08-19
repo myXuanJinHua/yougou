@@ -1,2 +1,56 @@
-<!--pages/cart/index.wxml-->
-<text>购物车</text>
+<view class="main">
+  <!-- 收货信息 -->
+  <view class="receiving">
+    <view class="receivingInfo">
+      <view class="receivingName">收货人: 苏老师</view>
+      <view class="receivingTel">13800138000</view>
+    </view>
+    <view class="receivingAdress">收货地址:广东省广州市吉山幼儿园</view>
+  </view>
+  <image class="border" src="../../images/cart_border@2x.png" mode="aspectFill"></image>
+
+  <!-- 商品列表 -->
+  <view class="shopList">
+    <view class="shopTitle">
+      <text class="iconfont icon-dianpu"></text>
+      <text>优购生活馆</text>
+    </view>
+    <view class="shopMain">
+      <icon type="success" size="16" color="#ff2d4a"></icon>
+      <view class="shopMain-right">
+        <image src="http://finance.youth.cn/finance_jsxw/201512/W020151212394860620163.jpg" mode="aspectFill"></image>
+        <view class="shopInfo">
+          <view class="shopInfo-title">spike 经典武士大马士革直刀(微型) 户外野营直刀 收藏礼品刀 饰品刀具spike 经典武士大马士革直刀(微型) 户外野营直刀 收藏礼品刀 饰品刀具</view>
+          <view class="shopInfo-bottom">
+            <view class="shopInfo-bottom-price">¥279.00</view>
+            <view class="shopInfo-number-right">
+              <view class="shopInfo-bottom-number">-</view>
+              <text>3</text>
+              <view class="shopInfo-bottom-number">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <button open-type="contact"></button>
+  <!-- 底部结算 -->
+  <view class="total">
+    <view class="totalLeft">
+      <text>全选</text>
+    </view>
+    <view class="totalCenter">
+      <view class="top">
+        <text>合计:</text>
+        <text>¥144111.00</text>
+      </view>
+      <view class="bottom">
+        不包含运费
+      </view>
+    </view>
+    <view class="totalRight">
+      结算
+    </view>
+  </view>
+</view>

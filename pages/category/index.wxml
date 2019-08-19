@@ -21,10 +21,11 @@
           <text>/</text>
         </view>
         <view class="main-right-cates">
-          <view class="main-right-cates-item" wx:for="{{item.children}}" wx:key="{{index}}">
+          <navigator url="/pages/goods_list/index?name={{item.cat_name}}&cid={{item.cat_id}}"
+          class="main-right-cates-item" wx:for="{{item.children}}" wx:key="{{index}}">
             <image src="{{item.cat_icon}}" mode="aspectFill"></image>
             <view>{{item.cat_name}}</view>
-          </view>
+          </navigator>
         </view>
       </view>
     </view>

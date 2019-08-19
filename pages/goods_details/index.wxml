@@ -1,0 +1,45 @@
+<!-- 商品详情页 -->
+<view class="details">
+  <!-- 轮播图 -->
+  <swiper class="slide" indicator-dots="true" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#fff">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.pics_big_url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 价格 -->
+  <view class="goods_price">¥ {{message.goods_price}}</view>
+
+  <!-- 描述 -->
+  <view class="goodsInfo">
+    <view class="goodsName">{{message.goods_name}}</view>
+    <view class="goodstar">
+      <view class="iconfont icon-shoucang"></view>
+      <view>收藏</view>
+    </view>
+  </view>
+
+  <!-- 富文本的区域 -->
+  <rich-text nodes="{{message.goods_introduce}}"></rich-text>
+  <!-- 底部的固定按钮 -->
+  <view class="navBottom">
+    <view class="customer navSmall">
+      <button open-type="contact">lia</button>
+      <view class="iconfont icon-kefu"></view>
+      <view>联系客服</view>
+    </view>
+    <view class="cat navSmall">
+      <view class="iconfont icon-gouwuche"></view>
+      <view>购物车</view>
+    </view>
+    <view class="addCat navBig">
+      加入购物车
+    </view>
+    <view class="buy navBig">
+      立即购买
+    </view>
+  </view>
+
+</view>
