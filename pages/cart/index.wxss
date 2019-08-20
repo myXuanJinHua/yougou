@@ -19,7 +19,7 @@ page, .main {
   margin-right: 50rpx;
 }
 
-.receiving .receivingInfo .receivingTel::after {
+.receiving .receivingInfo::after {
   position: absolute;
   top: 35rpx;
   right: 20rpx;

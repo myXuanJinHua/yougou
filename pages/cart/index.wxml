@@ -1,12 +1,16 @@
 <view class="main">
   <!-- 收货信息 -->
   <view class="receiving">
-    <view class="receivingInfo">
-      <view class="receivingName">收货人: 苏老师</view>
-      <view class="receivingTel">13800138000</view>
+    <view wx:if="{{adress.userName}}">
+      <view class="receivingInfo" bindtap="handleAdress">
+        <view class="receivingName">收货人: {{adress.userName}}</view>
+        <view class="receivingTel">{{adress.telNumber}}</view>
+      </view>
+      <view class="receivingAdress">收货地址:{{adress.detailInfo}}</view>
     </view>
-    <view class="receivingAdress">收货地址:广东省广州市吉山幼儿园</view>
+    <view class="receivingInfo" wx:else bindtap="handleAdress">添加新的收货地址</view>
   </view>
+
   <image class="border" src="../../images/cart_border@2x.png" mode="aspectFill"></image>
 
   <!-- 商品列表 -->
